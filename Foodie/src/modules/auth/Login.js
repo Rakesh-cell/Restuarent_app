@@ -25,10 +25,7 @@ import {useDispatch} from 'react-redux'
 const dispatch =useDispatch();
  
      const handlelogin=() => {
-         const user={
-             email:email,
-             password:password
-         }
+     
          let pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
          if (!pattern.test(String(email).toLowerCase())) {
              Alert.alert("Email","Invalid email")

@@ -20,7 +20,7 @@ export function HomeScreen() {
         ? 'cube'
         : 'cube-outline';
       }
-return <Ionicons name={iconName} size={size} color={color}     />;
+return <Ionicons name={iconName} size={size} color={color}  initialRouteName="TabA"   />;
         },
       })}
       tabBarOptions={{
