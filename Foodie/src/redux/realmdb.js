@@ -1,5 +1,5 @@
 
-import Realm from "realm"
+import Realm ,{ UpdateMode}from "realm"
 
 
 class ImageSchema extends Realm.Object {}
@@ -33,10 +33,7 @@ class RestuarentSchema extends Realm.Object {}
 let realm = new Realm({schema: [ImageSchema,RestuarentSchema], schemaVersion: 3});
 
 let downloaddata=(data)=>{
-    console.log('obj[1]', data[0].address)
-    console.log('obj[2]', data[1].address)
-    console.log('obj[3]', data[2].address)
-    console.log('obj[4]', data[3].address)
+    
 
 
     realm.write(()=>{
@@ -52,7 +49,7 @@ let downloaddata=(data)=>{
                 description: obj.description,
                 mobile: obj.mobile,
                 images: obj.images,
-        });
+        },"modified");
         // console.log('restuarent', restuarent)
     });
     })
@@ -62,11 +59,17 @@ let getAlldata=()=>{
     return realm.objects('Restuarent')
 }
 
+let deleteAlldata = () => {
+    realm.write(() => {
+        realm.delete(getAlldata());
+    });
+};
 export default realm;
 
 export{
     getAlldata,
     downloaddata,
+    deleteAlldata,
 }
 
 //  export const Images= {
