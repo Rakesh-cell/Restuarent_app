@@ -3,7 +3,7 @@ import { Box, Heading, AspectRatio, Image, Text, Center, HStack, Stack, NativeBa
 
 const Card = ({item}) => {
 console.log('item', item.images[0].url)
-var img=`${item.images[0].url}`
+
     return <View style={{margin:5}}>
     <Box justifyContent="center" maxH="xl" >
         <Box  rounded="lg" overflow="hidden" borderColor="coolGray.200" borderWidth="1" _dark={{
@@ -18,7 +18,7 @@ var img=`${item.images[0].url}`
             <Box>
                 <AspectRatio w="100%" ratio={16/ 9}>
                     <Image source={{
-                        uri:img
+                        uri:item.images[0].url
                     }} alt="image" />
                     {/* <Image source={{
                         uri: "https://www.holidify.com/images/cmsuploads/compressed/Bangalore_citycover_20190613234056.jpg"

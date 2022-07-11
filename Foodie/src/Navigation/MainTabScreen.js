@@ -28,8 +28,8 @@ return <Ionicons name={iconName} size={size} color={color}  initialRouteName="Ta
       inactiveTintColor: 'gray',
       }}
     >
-        <Tab.Screen name="TabA" component={TabAScreen} />
-        <Tab.Screen name="TabB" component={TabBScreen} />
+        <Tab.Screen name="TabA" component={TabAScreen} options={{tabBarLabel: 'Feed'}}/>
+        <Tab.Screen name="TabB" component={TabBScreen} options={{tabBarLabel: 'Locate'}}/>
     </Tab.Navigator>
   );
 }

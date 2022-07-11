@@ -29,12 +29,12 @@ const TabBScreen = ({ navigation }) => {
         <Marker
           coordinate={{ latitude: 12.972442, longitude: 77.580643 }}
           title={"Bengaluru"}
-          description={"Neostore Application"}
+          description={"Restuarent Application"}
         />
         <Marker
           coordinate={{ latitude: 19.076090, longitude: 72.877426 }}
           title={"Mumbai"}
-          description={"Neostore Mumbai"}
+          description={"Restuarent Mumbai"}
         />
       </MapView>
 
