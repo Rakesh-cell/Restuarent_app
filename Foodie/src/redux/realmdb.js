@@ -27,10 +27,10 @@ class RestuarentSchema extends Realm.Object {}
         images:{type:"list", objectType:'Images', property:'url'},
 
     },
-    // primaryKey: "id",
+    primaryKey: "title",
 };
 
-let realm = new Realm({schema: [ImageSchema,RestuarentSchema], schemaVersion: 3});
+let realm = new Realm({schema: [ImageSchema,RestuarentSchema], schemaVersion: 4});
 
 let downloaddata=(data)=>{
     
