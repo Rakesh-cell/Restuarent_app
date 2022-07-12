@@ -1,3 +1,6 @@
+/**
+ * @params {drawer content}
+ */
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { HomeScreen } from './MainTabScreen';
@@ -12,16 +15,12 @@ const Drawer = createDrawerNavigator();
 
 const DrawerNavig = ({navigation}) => {
   return (
-    // <View style={{ flex: 1,}}>
+
     <Drawer.Navigator  drawerContent={(props)=><DrawerContent {...props}/>} initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
-        {/* <Drawer.Screen name="Notifications" component={NotificationsScreen} /> */}
-        {/* <Drawer.Screen name="Login" component={Login} options={{headerShown:false}} /> */}
-        {/* <Drawer.Screen name="Signup" component={Signup} options={{headerShown:false}} /> */}
-
 
       </Drawer.Navigator>
-      // </View>
+
   )
 }
 

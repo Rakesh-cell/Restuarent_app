@@ -1,3 +1,7 @@
+/**
+ * @author Rakesh
+ * 
+ */
 import React, { useEffect } from 'react'
 import { View, StyleSheet, Alert, Text,ScrollView } from 'react-native'
 import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
@@ -11,19 +15,9 @@ import { HomeScreen } from './MainTabScreen';
 import NotificationsScreen from '../NotificationsScreen';
 import {Logout} from '../redux/actions'
 import { useDispatch } from 'react-redux';
+
 export function DrawerContent(props) {
 
-
-
-
-
-
-
-    // useEffect(() => {
-
-
-
-    // },[])
     const dispatch =useDispatch()
 
     return (
@@ -63,7 +57,7 @@ export function DrawerContent(props) {
                         
                         />
                         
-                        <DrawerItem
+                        {/* <DrawerItem
                             icon={({ size})=>(
                                 <Icon name='account'
                                 color="#1E90FF"
@@ -73,18 +67,8 @@ export function DrawerContent(props) {
                             label='Notifications'
                             onPress={()=>{props.navigation.navigate('Notifications')}}
                         
-                        />
-                        {/* <DrawerItem
-                            icon={({ size})=>(
-                                <Icon name='view-list'
-                                color="#1E90FF"
-                                size={size}
-                                />
-                            )}
-                            label='All Products'
-                            onPress={()=>{props.navigation.navigate('All Products')}}
-                        
                         /> */}
+                      
 </ScrollView>
                 </View>
             </DrawerContentScrollView>

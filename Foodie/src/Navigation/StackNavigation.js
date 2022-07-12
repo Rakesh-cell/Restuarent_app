@@ -48,8 +48,6 @@ const StackNavigation = () => {
         </>
       }
 
-      {/* <Stack.Screen name="TabA" component={TabAScreen} options={{headerShown:false}}/> */}
-      {/* <Stack.Screen name="TabA" component={TabAScreen} options={{headerShown:false}}/> */}
 
 
 

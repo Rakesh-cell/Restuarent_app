@@ -1,7 +1,8 @@
 /**
- * author {Rakesh}
- * params{ Login credentials}
- * 
+ * @author {Rakesh }
+ * @param {store}
+ * @description {This is application is for Restuarent application and locate stores on maps and user login contains a single user }
+ * created this using boilerplate template
  */
 
 import React, { useEffect } from 'react';

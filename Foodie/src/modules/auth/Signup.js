@@ -8,7 +8,7 @@ import { Alert } from "react-native";
 
 
 
-// import { signInUser } from '../../redux/action';
+
 
  const Signup = ({navigation}) => {
 
@@ -56,7 +56,8 @@ import { Alert } from "react-native";
             Alert.alert("Password","Password must match")
         } 
         else{
-navigation.navigate("Login")
+            Alert.alert("Signup","this screen for DEMO","please login through provided users credentials from admin")
+        navigation.navigate("Login")
             setEmail('')
         setfname('')
         setPassword('')
