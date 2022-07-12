@@ -14,11 +14,11 @@ import realm ,{ getAlldata,deleteAlldata } from '../../redux/realmdb';
     const [res,setres]= useState(getAlldata())//to store data 
 
       useEffect(() => {
-        if(res.length>4){
-          deleteAlldata()
+        // if(res.length>4){
+          // deleteAlldata()
         dispatch(Fetchdata())
 
-        }
+        // }
         // setres(getAlldata())
       },[])
       Platform.OS === 'android'?console.log("android",getAlldata()):null

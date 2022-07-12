@@ -99,7 +99,7 @@ export function DrawerContent(props) {
                     label='Sign out'
                     onPress={() => {
                         Alert.alert(
-                            "Boilerplate",
+                            "Foodie",
                             "Do you want to logout",
                             [
                                 {

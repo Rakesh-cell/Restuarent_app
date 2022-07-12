@@ -3,7 +3,6 @@
  * params{ Login credentials}
  * 
  */
-import 'react-native-gesture-handler'
 
 import React, { useEffect } from 'react';
 // 1. import `NativeBaseProvider` component
@@ -15,10 +14,14 @@ import { NativeBaseProvider } from 'native-base';
 import RootNavigation from './src/Navigation/RootNavigation'
 import { Provider } from 'react-redux'
 import { store } from './src/redux/store';
+import { enableLatestRenderer } from 'react-native-maps';
+
 
 
 
 export default function App() {
+  enableLatestRenderer();
+
   useEffect(() => {
     SplashScreen.hide();
   }, [])

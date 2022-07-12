@@ -2,7 +2,8 @@
 import Realm ,{ UpdateMode}from "realm"
 
 
-class ImageSchema extends Realm.Object {}
+// class ImageSchema extends Realm.Object {}
+class ImageSchema{}
 ImageSchema.schema= {
     name: "Images",
     embedded: true,
@@ -11,7 +12,8 @@ ImageSchema.schema= {
     },
 };
 
-class RestuarentSchema extends Realm.Object {}
+// class RestuarentSchema extends Realm.Object {}
+class RestuarentSchema{}
  RestuarentSchema.schema = {
     name: "Restuarent",
     properties: {
