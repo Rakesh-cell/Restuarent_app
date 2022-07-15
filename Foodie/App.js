@@ -30,13 +30,13 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <SafeAreaView style={{ flex: 1 }}>
+      <SafeAreaProvider>
         <NativeBaseProvider>
 
           <RootNavigation />
         </NativeBaseProvider>
 
-      </SafeAreaView>
+      </SafeAreaProvider>
     </Provider>
   )
 }
